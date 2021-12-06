@@ -1,8 +1,8 @@
 const linksSocialMedia = {
   youtube: 'channel/UC5WZfGUSt6EEmC5ar1-AiOw',
-  instagram: 'jakeliny.gracielly',
-  facebook: 'onerbreno',
-  twitter: 'onerbreno',
+  instagram: 'onerbrenno',
+  // facebook: '',
+  // twitter: '',
   github: 'onerbreno'
 }
 
@@ -26,6 +26,7 @@ function getGithubProfileInfos() {
       userBio.textContent = data.bio
       userLink.href = `${data.html_url}`
       userLogin.textContent = data.login
+      userImage.src = data.avatar_url
     })
 }
 
